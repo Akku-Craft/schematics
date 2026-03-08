@@ -17,8 +17,6 @@ Schaltplan/
 ├── Schaltplan.kicad_sch      # Main schematic
 ├── Schaltplan.kicad_pcb      # PCB layout
 ├── Schaltplan.kicad_pro      # KiCad project file
-├── sensor_corrente.kicad_sch # Current sensor schematic
-├── sensor_corrente.kicad_pcb # Current sensor PCB layout
 └── Schaltplan-backups/       # Automatic backups
 
 ```
