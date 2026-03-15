@@ -4,7 +4,7 @@ Here you can find the schematics and PCB layouts for the Akku-Craft project.
 
 ## Overview
 
-The project contains KiCad files for the development of battery management and monitoring systems. The main schematic as well as a separate current sensor are included.
+The project contains KiCad files for the development of battery management and monitoring systems.
 
 ![Schematic](schaltplan.png)
 
@@ -35,14 +35,6 @@ Clone the repository and open the file `schematics/Schaltplan.kicad_pro` in KiCa
 
 The main schematic is located in `Schaltplan.kicad_sch`.
 
-## Workflow
-
-Typical workflow for changes:
-
-1. Open and edit the schematic in KiCad
-2. Update the PCB layout accordingly
-3. Perform a Design Rule Check (DRC)
-4. Export Gerber files for manufacturing
 
 ## Backups
 
