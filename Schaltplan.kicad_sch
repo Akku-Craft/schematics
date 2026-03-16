@@ -4990,6 +4990,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 0 0 0 1)
 		)
 		(uuid "464d7dc7-ec73-49b7-bb8f-098c5cff9116")
 	)
