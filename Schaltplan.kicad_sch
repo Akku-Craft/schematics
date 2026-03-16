@@ -4925,6 +4925,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 0 1)
 		)
 		(uuid "3cb099f4-838d-44ad-8541-993f0cb9130c")
 	)
