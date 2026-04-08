@@ -1,46 +1,66 @@
 # Akku-Craft Schematics
 
-Here you can find the schematics and PCB layouts for the Akku-Craft project.
+Schematics and PCB layout files for the Akku-Craft hardware platform.
 
-## Overview
+This repository contains the electrical design source used for battery management and monitoring hardware development.
 
-The project contains KiCad files for the development of battery management and monitoring systems.
+![Schematic Preview](https://akku-craft.usbverkehrtherum.de/wiki/schaltplan.png)
 
-![Schematic](schaltplan.png)
+## Scope
 
-## Project Structure
+This repo focuses on:
 
+- Schematic design (`.kicad_sch`)
+- PCB layout (`.kicad_pcb`)
+- KiCad project configuration (`.kicad_pro`)
 
+Firmware, web, and mechanical assets are maintained in separate repositories.
+
+## Requirements
+
+- KiCad 9.x (recommended)
+- Git for version control
+
+Download KiCad: https://www.kicad.org/
+
+## Quick Start
+
+1. Clone this repository.
+2. Open `Schaltplan.kicad_pro` in KiCad.
+3. Work from the project root (do not move files out of this directory).
+
+## Repository Structure
+
+```text
+Schaltplan.kicad_sch      # Main schematic
+Schaltplan.kicad_pcb      # PCB layout
+Schaltplan.kicad_pro      # KiCad project file
+Schaltplan.kicad_prl      # KiCad local project settings
+Schaltplan-backups/       # Automatic KiCad backups
 ```
 
-┌── Schaltplan.kicad_sch      # Main schematic
-├── Schaltplan.kicad_pcb      # PCB layout
-├── Schaltplan.kicad_pro      # KiCad project file
-├── Schaltplan.kicad_prl
-└── Schaltplan-backups/       # Automatic backups
+## Recommended Workflow
 
-```
+1. Create a branch for your change.
+2. Edit schematic and/or PCB in KiCad.
+3. Run ERC and DRC before opening a pull request.
+4. Keep commits focused and easy to review.
 
-## Software
-
-The project was created with KiCad. Version 9.x or higher is recommended.
-
-Download: https://www.kicad.org/
-
-## Installation
-
-Clone the repository and open the file `schematics/Schaltplan.kicad_pro` in KiCad.
-
-## Components
-
-The main schematic is located in `Schaltplan.kicad_sch`.
-
+For contribution expectations, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Backups
 
-KiCad automatically creates backups in the `Schaltplan-backups/` folder. The ZIP files contain snapshots of the project at various points in time.
+KiCad can generate backup archives in `Schaltplan-backups/`.
 
+- Keep backups out of commits unless explicitly needed for recovery/documentation.
+- If backup files are included intentionally, mention why in the PR description.
+
+## Documentation
+
+- Project wiki: https://akku-craft.usbverkehrtherum.de/wiki
+- Contribution guide: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## License
 
-This project is licensed under the CC BY-NC-SA 4.0 License – see the [LICENSE](LICENSE) file for details.
+This project is licensed under the CC BY-NC-SA 4.0 license.
+See [LICENSE](LICENSE) for details.
